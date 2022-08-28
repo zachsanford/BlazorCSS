@@ -1,0 +1,48 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.flex button {
+    margin-top: 150px;
+}
+
+.base {
+    z-index: 1;
+    font-size: 4em;
+}
+
+.first {
+    color: red;
+    animation: key-clockwise 5s infinite linear;
+}
+
+.second {
+    color: blue;
+    animation: key-counter-clockwise 5s infinite linear;
+}
+
+.return {
+    position: relative;
+    bottom: -15vh;
+}
+
+@keyframes key-clockwise {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes key-counter-clockwise {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
