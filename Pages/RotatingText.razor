@@ -1,0 +1,22 @@
+@page "/rotating-text"
+
+<PageTitle>Rotating Text</PageTitle>
+
+<div class="flex">
+    <div class="@cssClass">Hello, world!</div>
+    <button @onclick="InvokeCSSChange">Change CSS</button>
+    <div class="return"><a href="/">Return</a></div>
+</div>
+
+@code {
+
+    string cssClass = "base first";
+    int count = 1;
+
+    void InvokeCSSChange()
+    {
+        cssClass = (count % 2 == 0) ? "base first" : "base second";
+        count++;
+    }
+
+}
