@@ -1,0 +1,180 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.child {
+    display: flex;
+    position: relative;
+}
+
+.back-line {
+    border-bottom: 10px solid black;
+    width: 110vw;
+    left: -50vw;
+    height: 10px;
+    position: absolute;
+}
+
+.left-foreground {
+    z-index: 2;
+    position: absolute;
+    border-bottom: 10px solid white;
+    width: 150px;
+    height: 10px;
+    left: -51vw;
+    transform: skewX(-50deg);
+}
+
+.right-foreground {
+    z-index: 2;
+    position: absolute;
+    border-bottom: 10px solid white;
+    width: 150px;
+    height: 10px;
+    right: -51vw;
+    transform: skewX(-50deg);
+}
+
+.moving-line {
+    z-index: 1;
+    border-bottom: 10px solid rgb(197, 197, 197);
+    width: 10px;
+    position: relative;
+    transform: skewX(-50deg);
+    animation: key-line 1.5s infinite linear;
+}
+
+.return {
+    position: relative;
+    bottom: -15vh;
+}
+
+.letter {
+    font-size: 72pt;
+    font-weight: bold;
+    margin: 15px;
+    position: relative; /* Needed for the animation */
+}
+
+.letter#one {
+    animation: key-one 1.5s infinite;
+}
+
+.letter#two {
+    animation: key-two 1.5s infinite;
+}
+
+.letter#three {
+    animation: key-three 1.5s infinite;
+}
+
+.letter#four {
+    animation: key-four 1.5s infinite;
+}
+
+.letter#five {
+    animation: key-five 1.5s infinite;
+}
+
+.letter#six {
+    animation: key-six 1.5s infinite;
+}
+
+.letter#seven {
+    animation: key-seven 1.5s infinite;
+}
+
+.letter#eight {
+    animation: key-eight 1.5s infinite;
+}
+
+.letter#nine {
+    animation: key-nine 1.5s infinite;
+}
+
+.letter#ten {
+    animation: key-ten 1.5s infinite;
+}
+
+@keyframes key-one {
+    0%, 20% {top: 0px;}
+    30% {top: -150px;}
+    40% {top: 20px;}
+    50%, 100% {top: 0px;}
+}
+
+@keyframes key-two {
+    0%, 25% {top: 0px;}
+    35% {top: -150px;}
+    45% {top: 20px;}
+    55%, 100% {top: 0px;}
+}
+
+@keyframes key-three {
+    0%, 30% {top: 0px;}
+    40% {top: -150px;}
+    50% {top: 20px;}
+    60%, 100% {top: 0px;}
+}
+
+@keyframes key-four {
+    0%, 35% {top: 0px;}
+    45% {top: -150px;}
+    55% {top: 20px;}
+    65%, 100% {top: 0px;}
+}
+
+@keyframes key-five {
+    0%, 40% {top: 0px;}
+    50% {top: -150px;}
+    60% {top: 20px;}
+    70%, 100% {top: 0px;}
+}
+
+@keyframes key-six {
+    0%, 45% {top: 0px;}
+    55% {top: -150px;}
+    65% {top: 20px;}
+    75%, 100% {top: 0px;}
+}
+
+@keyframes key-seven {
+    0%, 50% {top: 0px;}
+    60% {top: -150px;}
+    70% {top: 20px;}
+    80%, 100% {top: 0px;}
+}
+
+@keyframes key-eight {
+    0%, 55% {top: 0px;}
+    65% {top: -150px;}
+    75% {top: 20px;}
+    85%, 100% {top: 0px;}
+}
+
+@keyframes key-nine {
+    0%, 60% {top: 0px;}
+    70% {top: -150px;}
+    80% {top: 20px;}
+    90%, 100% {top: 0px;}
+}
+
+@keyframes key-ten {
+    0%, 65% {top: 0px;}
+    75% {top: -150px;}
+    85% {top: 20px;}
+    95%, 100% {top: 0px;}
+}
+
+@keyframes key-line {
+    from {
+        left: -160px;
+    } to {
+        left: 100vw;
+    }
+}

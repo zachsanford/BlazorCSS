@@ -1,0 +1,17 @@
+.parent {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizonally centers children */
+    align-items: center;
+    height: 100vh; /* Makes the DIV's height 100% of the view port */
+    text-align: center; /* Centers the childrens text */
+}
+
+.child {
+    text-align: left;
+}
+
+.child h1 {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid 1px lightgray;
+}
